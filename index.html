@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>IdealBudCompany</title>
+</head>
+<body>
+  <div class="top">
+    <div class="container">
+      <header id="header" class="header">
+        <div class="header__logo">
+          <div class="header__logo--wrap">
+            <img src="img/Logo_IBC.svg" alt="Logo_IBC">
+          </div>
+          <div class="header__slogan--wrap">
+            <p>Строительство домов</p>
+            <p>в Киеве и Киевской области</p>
+          </div>
+        </div>
+        <div class="header__download--wrap">
+          <div class="header__download--icon">
+            <svg width="25" height="20">
+              <use href="#icon-download"/>
+            </svg>
+          </div>
+          <a href="img/doc.jpg" class="header__download--link" download>Скачать прайс-лист</a>
+        </div>
+        <div class="header__social--wrap">
+          <div class="header__social--title">
+            <p>Свяжитесь с нами</p>
+          </div>
+          <div class="header__social--links">
+            <a href="viber://forward?text=%D0%9A%D0%B0%D0%BA%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D1%83%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%20%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D1%84%D0%BE%D0%BD%D0%BE%D0%B2%20background%20CSS%20https%3A%2F%2Fsnipp.ru%2Fhtml-css%2Fmultiple-backgrounds&utm_source=share2" rel="nofollow" target="_blank" title="Viber">
+              <svg width="18" height="18">
+                <use href="#icon-viber"/>
+              </svg>
+              <span>Viber</span>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=+380961776689" target="_blank" title="WhatsApp">
+              <svg width="18" height="18">
+                <use href="#icon-whatsapp"/>
+              </svg>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+        <div class="header__phone--wrap">
+          <div class="header__phone--title">
+            <p>звоните</p>
+          </div>
+          <div class="header__phone--inner">
+            <div class="header__phone--icon">
+              <svg width="15" height="15">
+                <use href="#icon-call"/>
+              </svg>
+            </div>
+            <div class="header__phone--numbers">
+              <a href="tel:+3888888888888" title="phone">+3888888888888</a>
+              <a href="tel:+3888888888888" title="phone">+3888888888888</a>
+            </div>
+          </div>
+        </div>
+        <div class="header__menu">
+          <p class="header__menu-title">Меню</p>
+          <div class="header__gamburger">
+            <span></span>
+          </div>
+        </div>
+        <div class="gamburger__menu">
+          <div class="gamburger__close-btn"></div>
+          <ul class="gamburger-menu__list">
+            <li class="gamburger-menu__list--item">
+              <a href="#header" class="gamburger-menu__list--link gamburger-menu__link-activ" title="Главная">Главная</a>
+            </li>
+            <li class="gamburger-menu__list--item">
+              <a href="#calculation" class="gamburger-menu__list--link" title="Расчет стоимости">Расчет стоимости</a>
+            </li>
+            <li class="gamburger-menu__list--item">
+              <a href="#advantages" class="gamburger-menu__list--link" title="Наши преимущества">Наши преимущества</a>
+            </li>
+            <li class="gamburger-menu__list--item">
+              <a href="#download-price" class="gamburger-menu__list--link" title="Скачать прайс">Скачать прайс</a>
+            </li>
+            <li class="gamburger-menu__list--item">
+              <a href="#portfolio" class="gamburger-menu__list--link" title="Портфолио">Портфолио</a>
+            </li>
+            <li class="gamburger-menu__list--item">
+              <a href="#contacts" class="gamburger-menu__list--link" title="Контакты">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__recall--wrap">
+          <a href="#modal-call" class="header__recall--btn btn recall--btn" title="Перезвоните"><span class="btn-blick"></span>
+            <svg width="15" height="15" class="header__recall--icon">
+              <use href="#icon-call"/>
+            </svg>Перезвоните мне</a>
+        </div>
+        <div id="modal-call" class="modal-call">
+          <div class="modal-call__wrap">
+            <div class="modal-call__close"></div>
+            <p class="modal-call__title">Введите Ваш номер телефона и мы Вам перезвоним в течении 15 минут</p>
+            <form action="sender.php" method="post" class="modal-call__form">
+              <input type="tel" name="phone" placeholder="+38 (___) ___ __ __" class="modal-call__form-phone phone" required>
+              <button class="modal-call__form--btn btn send-form" type="button"><span class="btn-blick"></span>Отправить</button>
+            </form>
+          </div>
+        </div>
+      </header>
+    </div>
+    <nav class="menu container">
+      <ul class="menu__list">
+        <li class="menu__list--item">
+          <a href="#header" class="menu__list--link menu__list--link-activ" title="Главная">Главная</a>
+        </li>
+        <li class="menu__list--item">
+          <a href="#calculation" class="menu__list--link" title="Расчет стоимости">Расчет стоимости</a>
+        </li>
+        <li class="menu__list--item">
+          <a href="#advantages" class="menu__list--link" title="Наши преимущества">Наши преимущества</a>
+        </li>
+        <li class="menu__list--item">
+          <a href="#download-price" class="menu__list--link" title="Скачать прайс">Скачать прайс</a>
+        </li>
+        <li class="menu__list--item">
+          <a href="#portfolio" class="menu__list--link" title="Портфолио">Портфолио</a>
+        </li>
+        <li class="menu__list--item">
+          <a href="#contacts" class="menu__list--link" title="Контакты">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="main container">
+      <div class="main-left">
+        <div class="main__title">
+          <h1><span class="title-bold">Строительство домов</span> с гарантией 5 лет</h1>
+          <p class="main__subtext">в Киеве и Киевской области<br/>по фиксированной стоимости в договоре</p>
+        </div>
+        <div class="main__wrap">
+          <div class="main__inner">
+            <svg width="30" height="30" class="main__inner--icon">
+              <use href="#icon-ok"/>
+            </svg>
+            <p class="main__text"><span class="title-bold">Полное комплектование</span> строительными, отделочными материалами и инженерным оборудованием;</p>
+          </div>
+          <div class="main__inner">
+            <svg width="30" height="30" class="main__inner--icon">
+              <use href="#icon-ok"/>
+            </svg>
+            <p class="main__text"><span class="title-bold">Скорость выполнения работ,</span> достигаемая хорошим управлением и наличием всех профильных специалистов в штате;</p>
+          </div>
+          <div class="main__inner">
+            <svg width="30" height="30" class="main__inner--icon">
+              <use href="#icon-ok"/>
+            </svg>
+            <p class="main__text">Возможна <span class="title-bold">оплата в кредит.</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="main-right">
+        <div class="main-right__box">
+          <div class="main-right__form">
+            <div class="main-right__form-img">
+              <img src="img/man.png" alt="man">
+            </div>
+            <div class="main-right__form-slogan header__phone--title">
+              <p>это бесплатно</p>
+            </div>
+            <p class="main-right__form-social-title">Обсудите свой проект со<br/> строителем с 10 летним опытом</p>
+            <p class="main-right__form-social-subtitle">Оставьте заявку и через несколько минут мы свяжемся с Вами на удобный Вам мессенджер или на e-mail</p>
+            <form action="sender.php" method="post" id="form-main">
+              <div class="main-right__form-social-list">
+                <label class="main-right__form-social-item" for="soc_viber">
+                  <input id="soc_viber" class="main-right__form-input" type="tel" placeholder="Ваш телефон в Viber" name="social_viber" value="Viber">
+                  <span class="main-right__form-social-text">
+                    <svg width="30" height="30">
+                      <use href="#icon-viber"/>
+                    </svg>
+                    <span>Viber</span>
+                  </span>
+                </label>
+                <label class="main-right__form-social-item" for="soc_telegram">
+                  <input id="soc_telegram" class="main-right__form-input" type="tel" placeholder="Ваш телефон в Telegram" name="social_telegram" value="Telegram">
+                  <span class="main-right__form-social-text">
+                    <svg width="30" height="30">
+                      <use href="#icon-telegram"/>
+                    </svg>
+                    <span>Telegram</span>
+                  </span>
+                </label>
+                <label class="main-right__form-social-item" for="soc_whatsapp">
+                  <input id="soc_whatsapp" class="main-right__form-input" type="tel" placeholder="Ваш телефон в WhatsApp" name="social_whatsapp" value="WhatsApp">
+                  <span class="main-right__form-social-text">
+                    <svg width="30" height="30">
+                      <use href="#icon-whatsapp"/>
+                    </svg>
+                    <span>WhatsApp</span>
+                  </span>
+                </label>
+                <label class="main-right__form-social-item" for="soc_mail">
+                  <input id="soc_mail" class="main-right__form-input" type="email" placeholder="Ваш E-mail" name="email" value="E-mail">
+                  <span class="main-right__form-social-text">
+                    <svg width="30" height="30">
+                      <use href="#icon-dog"/>
+                    </svg>
+                    <span>E-mail</span>
+                  </span>
+                </label>
+              </div>
+              <div class="main-right__form-check">
+                <input type="text" name="phone" class="main-right__form-phone" required>
+                <div class="main-right__form-check-btn">
+                  <button class="main-right__form--btn btn send-form" type="button"><span class="btn-blick"></span>Отправить</button>
+                </div>
+                <!-- <div class="form__agreement">
+                  <input id="agreement1" type="checkbox" checked>
+                  <label for="agreement1">Согласен на	обработку персональных данных</label>
+                </div> -->
+              </div>
+            </form>
+            <div>
+              <p class="main-right__form-check-subtext">или позвоните</p>
+              <a href="tel:+3888888888888" class="main-right__form--subbtn" title="Phone">
+                <svg width="15" height="15">
+                  <use href="#icon-call"/>
+                </svg>
+                +3888888888888</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <section id="calculation">
+  </section>
+
+  <section class="boss">
+    <div class="container">
+      <h3 class="boss__title"><span class="title-bold">Мы знаем все</span> о строительстве<br/>малоэтажных домов и строительных работах</h3>
+      <div class="boss__wrap">
+        <div class="boss__left">
+          <img src="img/man.png" alt="boss">
+        </div>
+        <div class="boss__right">
+          <div class="boss__quotes">
+            <img src="img/quotes.png" alt="quotes">
+          </div>
+          <p class="boss__right-name">Здравствуйте, меня зовут <span>Виталий Викторович</span></p>
+          <p>Я - руководитель строительной компании.</p>
+          <p>Мы занимаемся строительством малоэтажных домов, их отделкой и благоустройством территорий.</p>
+          <p>С 2009 года мы построили более 30 домов.</p>
+          <p class="c">Понимая рынок и зная пустые обещания иных подрядчиков наша цель:</p>
+          <div class="boss__list">
+            <div class="boss__item">
+              <svg width="30" height="30" class="main__inner--icon">
+                <use href="#icon-ok"/>
+              </svg>
+              <p class="boss__item-text">Избавить Вас от стресса и хлопот взяв на себя весь комплекс работ по строительству;</p>
+            </div>
+            <div class="boss__item">
+              <svg width="30" height="30" class="main__inner--icon">
+                <use href="#icon-ok"/>
+              </svg>
+              <p class="boss__item-text">Уложиться в оговоренные сроки;</p>
+            </div>
+            <div class="boss__item">
+              <svg width="30" height="30" class="main__inner--icon">
+                <use href="#icon-ok"/>
+              </svg>
+              <p class="boss__item-text">Не выйти за рамки бюджета.</p>
+            </div>
+          </div>
+          <p class="boss__right-subtext">Давайте все это обсудим</p>
+          <p>Звоните мне</p>
+          <a href="tel:+3888888888888" class="main-right__form--subbtn" title="Phone">
+            <svg width="15" height="15">
+              <use href="#icon-call"/>
+            </svg>
+            +3888888888888</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hamer" class="hamer">
+    <div class="container">
+      <div class="hamer__img-hamer">
+        <img src="img/hamer.png" alt="hamer">
+      </div>
+      <h2 class="hamer__title"><span class="title-bold">Мы гарантируем</span> Ваше минимальное<br/>вовлечение в рутину строительства, беря на себя<br/>весь комплекс строительных работ</h2>
+      <div class="hamer__box">
+        <p class="hamer__box-title">Вы не рискуете своими деньгами, нервами и временем</p>
+        <p class="hamer__box-subtitle">Мы берем на себя полную материальную ответственность по договору за дом, работы, сроки выполнения каждого этапа работы</p>
+        <div class="hamer__box-wrap">
+          <div class="hamer__box-inner-left">
+            <div class="hamer__left-border">
+              <div class="hamer__left-btn hamer__btn-active" data-offer="cement">Бетонные работы</div>
+              <div class="hamer__left-btn" data-offer="wall">Возведение стен</div>
+              <div class="hamer__left-btn" data-offer="roof">Кровельные работы</div>
+              <div class="hamer__left-btn" data-offer="facade">Отделка фасада</div>
+              <div class="hamer__left-btn" data-offer="engeneering">Инженерные работы</div>
+              <div class="hamer__left-btn" data-offer="landscape">Благоустройство территорий</div>
+            </div>
+          </div>
+          <div class="hamer__box-inner-right">
+            <div class="hamer__right-box hamer__box-active" data-offer="cement">
+              <p class="hamer__right-title">Бетонные работы</p>
+              <ul class="hamer__right-list">
+                <li class="hamer__right-item">Проектирование.</li>
+                <li class="hamer__right-item">Разметка.</li>
+                <li class="hamer__right-item">Земельные работы.</li>
+                <li class="hamer__right-item">Монтаж опалубки.</li>
+                <li class="hamer__right-item">Армирование</li>
+                <li class="hamer__right-item">Заливка.</li>
+                <li class="hamer__right-item">Гидроизоляция и обратная засыпка.</li>
+              </ul>
+              <p class="hamer__right-price">от <span>95 грн/куб.м.</span></p>
+              <a href="#hamer" class="hamer__right-btn btn recall--btn" title="Phone"><span class="btn-blick"></span>Заказать услугу</a>
+            </div>
+            <div class="hamer__right-box" data-offer="wall">
+              <p class="hamer__right-title">Возведение стен</p>
+              <ul class="hamer__right-list">
+                <li class="hamer__right-item">Пеногазосиликатного блока</li>
+                <li class="hamer__right-item">Керамзитобетонных блоков</li>
+                <li class="hamer__right-item">для каркасного дома</li>
+              </ul>
+              <p class="hamer__right-price">от <span>32 грн/куб.м.</span></p>
+              <a href="#hamer" class="hamer__right-btn btn recall--btn" title="Phone"><span class="btn-blick"></span>Заказать услугу</a>
+            </div>
+            <div class="hamer__right-box" data-offer="roof">
+              <p class="hamer__right-title">Кровельные работы</p>
+              <ul class="hamer__right-list">
+                <li class="hamer__right-item">Перекрыть старую крышу</li>
+                <li class="hamer__right-item">Накрыть новую крышу</li>
+                <li class="hamer__right-item">Ремонт крыши</li>
+                <li class="hamer__right-item">Подшивка свесов крыши (софит)</li>
+                <li class="hamer__right-item">Водосточная система</li>
+              </ul>
+              <p class="hamer__right-price">от <span>14 грн/куб.м.</span></p>
+              <a href="#hamer" class="hamer__right-btn btn recall--btn" title="Phone"><span class="btn-blick"></span>Заказать услугу</a>
+            </div>
+            <div class="hamer__right-box" data-offer="facade">
+              <p class="hamer__right-title">Отделка фасада</p>
+              <ul class="hamer__right-list">
+                <li class="hamer__right-item">Покраска</li>
+                <li class="hamer__right-item">Облицовка</li>
+                <li class="hamer__right-item">Оштукатуривание</li>
+                <li class="hamer__right-item">Утепление</li>
+              </ul>
+              <p class="hamer__right-price">от <span>14 грн/куб.м.</span></p>
+              <a href="#hamer" class="hamer__right-btn btn recall--btn" title="Phone"><span class="btn-blick"></span>Заказать услугу</a>
+            </div>
+            <div class="hamer__right-box" data-offer="engeneering">
+              <p class="hamer__right-title">Инженерные работы</p>
+              <ul class="hamer__right-list">
+                <li class="hamer__right-item">Установка окон и дверей</li>
+                <li class="hamer__right-item">Сантехнические работы</li>
+                <li class="hamer__right-item">Электромонтажные работы</li>
+                <li class="hamer__right-item">Отопление</li>
+              </ul>
+              <p class="hamer__right-price">от <span>10 грн/кв.м.</span></p>
+              <a href="#hamer" class="hamer__right-btn btn recall--btn" title="Phone"><span class="btn-blick"></span>Заказать услугу</a>
+            </div>
+            <div class="hamer__right-box" data-offer="landscape">
+              <p class="hamer__right-title">Благоустройство территорий</p>
+              <ul class="hamer__right-list">
+                <li class="hamer__right-item">Укладка тротуарной плитки</li>
+                <li class="hamer__right-item">Установка заборов</li>
+                <li class="hamer__right-item">Устройство газонов</li>
+                <li class="hamer__right-item">Снятие, вывоз старого грунта</li>
+                <li class="hamer__right-item">Завоз нового плодородного слоя</li>
+                <li class="hamer__right-item">Выравнивание грунта</li>
+              </ul>
+              <p class="hamer__right-price">от <span>13 грн/кв.м.</span></p>
+              <a href="#hamer" class="hamer__right-btn btn recall--btn" title="Phone"><span class="btn-blick"></span>Заказать услугу</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="download-price" class="price">
+    <div class="container">
+      <div class="price__wrap">
+        <div class="header__phone--title">
+          <p class="price__wrap-aside">это бесплатно</p>
+        </div>
+        <h4 class="price__wrap-title">Скачайте актуальный<br/>прайс-лист<br/>на Строительство домов</h4>
+        <div class="price__box">
+          <div class="price__box-renewal">Обновлен  <span class="price__box-date"></span></div>
+          <p class="price__box-subtitle"><span class="title-bold">Заполните форму,</span> чтобы получить доступ к прайсу на все выполняемые нами виды работ</p>
+          <p class="price__box-text">за номером телефона закрепим скидку</p>
+          <form action="sender.php" method="post" id="form-download-price" class="price__form">
+            <input type="tel" name="phone" placeholder="+38 (___) ___ __ __" class="price__phone phone" autocomplete="on" required>
+            <div class="price__btn">
+              <button class="btn send-form" type="button"><span class="btn-blick"></span>Скачать прайс</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="objects" class="objects">
+    <div class="container">
+      <h4 class="objects__title"><span class="title-bold">За 2019 год построено и отремонтировано более 20 объектов</span></h4>
+      <p class="objects__subtitle">Вот некоторые из них</p>
+      <div class="objects__wrap">
+        <div class="objects__slide-inner">
+
+          <div class="objects__slider">
+            <div class="objects__slider-item">
+              <div class="objects__slider-img">
+                <div class="objects__box-img">
+                  <img src="img/4-01.jpg" alt="img1" class="img__pop-up">
+                </div>
+                <div class="objects__gallery-list">
+                  <div class="objects__gallery-item">
+                    <img src="img/4-01.jpg" alt="slide-img" class="img__pop-up">
+                  </div>
+                  <div class="objects__gallery-item">
+                    <img src="img/people_002.png" alt="slide-img" class="img__pop-up">
+                  </div>
+                  <div class="objects__gallery-item">
+                    <img src="img/people.png" alt="slide-img" class="img__pop-up">
+                  </div>
+                  <div class="objects__gallery-item">
+                    <img src="img/man_004.png" alt="slide-img" class="img__pop-up">
+                  </div>
+                  <div class="objects__gallery-item">
+                    <img src="img/cot.png" alt="slide-img" class="img__pop-up">
+                  </div>
+                </div>
+              </div>
+              <div class="objects__slider-box">
+                <div class="objects__slider-aside">
+                  <div class="header__phone--title">
+                    <p class="price__wrap-aside">Запросить смету<br/>этого проекта</p>
+                  </div>
+                </div>
+                <p class="objects__slider-title">Строительство жилого дома</p>
+                <p class="objects__slider-text"><span class="title-bold">Строительство жилого дома</span> Гомельский р-н пос.Урицкое, ул.Ятченко 79</p>
+                <p class="objects__slider-text"><span class="title-bold">Время работы:</span> 46 дней</p>
+                <div class="objects__slider-inner">
+                  <p class="objects__slider-inner-text">Характеристики</p>
+                  <p class="objects__slider-inner-subtext"><span class="title-bold">Площадь</span> 90 кв.м.</p>
+                  <p class="objects__slider-inner-subtext"><span class="title-bold">Устройство стен</span> пгс</p>
+                  <p class="objects__slider-inner-subtext"><span class="title-bold">Площадь</span> 70 кв.м.</p>
+                  <p class="objects__slider-inner-subtext"><span class="title-bold">Устройство </span> пгс</p>
+                </div>
+                <div class="slider__btn-right">
+                  <a href="#calculation" class="btn" title="калькулятор"><span class="btn-blick"></span>Рассчитать в калькуляторе свой проект</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="objects__slider">
+            <div class="objects__slider-item">
+              <div class="objects__slider-img">
+                <div class="objects__box-img">
+                  <img src="img/house_002.png" alt="img2" class="img__pop-up">
+                </div>
+                <div class="objects__gallery-list">
+                  <div class="objects__gallery-item">
+                    <img src="img/4-01.jpg" alt="slide-img" class="img__pop-up">
+                  </div>
+                  <div class="objects__gallery-item">
+                    <img src="img/people_002.png" alt="slide-img" class="img__pop-up">
+                  </div>
+                  <div class="objects__gallery-item">
+                    <img src="img/people.png" alt="slide-img" class="img__pop-up">
+                  </div>
+                  <div class="objects__gallery-item">
+                    <img src="img/man_004.png" alt="slide-img" class="img__pop-up">
+                  </div>
+                  <div class="objects__gallery-item">
+                    <img src="img/cot.png" alt="slide-img" class="img__pop-up">
+                  </div>
+                </div>
+              </div>
+              <div class="objects__slider-box">
+                <div class="objects__slider-aside">
+                  <div class="header__phone--title">
+                    <p class="price__wrap-aside">Запросить смету<br/>этого проекта</p>
+                  </div>
+                </div>
+                <p class="objects__slider-title">Строительство жилого дома</p>
+                <p class="objects__slider-text"><span class="title-bold">Строительство жилого дома</span> Гомельский р-н пос.Урицкое, ул.Ятченко 79</p>
+                <p class="objects__slider-text"><span class="title-bold">Время работы:</span> 46 дней</p>
+                <div class="objects__slider-inner">
+                  <p class="objects__slider-inner-text">Характеристики</p>
+                  <p class="objects__slider-inner-subtext"><span class="title-bold">Площадь</span> 90 кв.м.</p>
+                  <p class="objects__slider-inner-subtext"><span class="title-bold">Устройство стен</span> пгс</p>
+                  <p class="objects__slider-inner-subtext"><span class="title-bold">Площадь</span> 70 кв.м.</p>
+                  <p class="objects__slider-inner-subtext"><span class="title-bold">Устройство </span> пгс</p>
+                </div>
+                <div class="slider__btn-right">
+                  <button class="btn" type="button"><span class="btn-blick"></span>Рассчитать в калькуляторе свой проект</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="see">
+    <div class="container">
+      <div class="see__container">
+        <h2 class="see__title">Лучше <span class="title-bold">один раз увидеть</span></h2>
+        <p class="see__subtitle">Наша команда стремится к полной прозрачности в работе, поэтому</p>
+        <p class="see__subtitle">мы с удовольствием показываем каждый процесс строительства, без прикрас.</p>
+      </div>
+      <div class="see__box">
+        <div class="see__box-img">
+          <img src="img/target.png" alt="target">
+        </div>
+        <p class="see__box-text"><span class="title-bold">Запишитесь на экскурсию по строящимся домам,</span> чтобы убедиться в нашем профессионализме вживую!</p>
+        <form action="sender.php" method="post" id="form-excursion" class="see__form">
+          <input type="text" name="text" placeholder="Удобная дата и время" class="see__form-date" required>
+          <input type="tel" name="phone" placeholder="+38 (___) ___ __ __" class="see__form-tel phone" autocomplete="on" required>
+          <div class="see__form-btn">
+            <button class="btn send-form" type="button"><span class="btn-blick"></span>Записаться на экскурсию</button>
+          </div>
+          <!-- <div class="form__agreement">
+            <input id="agreement2" type="checkbox" checked>
+            <label for="agreement2">Согласен на	обработку персональных данных</label>
+          </div> -->
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="staps">
+    <div class="container">
+      <div class="staps__stars">
+        <svg width="100" height="30">
+          <use href="#stars"/>
+        </svg>
+      </div>
+      <div class="staps__title">
+        <h2>Вы <span class="title-bold">получаете все в одном месте:</span> от идеи до реализации</h2>
+      </div>
+      <div class="staps__wrap">
+        <ul class="staps__list">
+          <li class="staps__item">
+            <p class="staps__item-week">1 неделя</p>
+            <div class="staps__icon">
+              <img src="img/it1.png" alt="Заключение договора">
+            </div>
+            <p class="staps__text">Заключение договора</p>
+          </li>
+          <li class="staps__item">
+            <p class="staps__item-week">2 неделя</p>
+            <div class="staps__icon">
+              <img src="img/it2.png" alt="Заливка фундамента">
+            </div>
+            <p class="staps__text">Заливка фундамента</p>
+          </li>
+          <li class="staps__item">
+            <p class="staps__item-week">3 неделя</p>
+            <div class="staps__icon">
+              <img src="img/it3.png" alt="Возведение каркаса">
+            </div>
+            <p class="staps__text">Возведение каркаса</p>
+          </li>
+          <li class="staps__item">
+            <p class="staps__item-week">4 неделя</p>
+            <div class="staps__icon">
+              <img src="img/it4.png" alt="Монтаж кровли">
+            </div>
+            <p class="staps__text">Монтаж кровли</p>
+          </li>
+          <li class="staps__item">
+            <p class="staps__item-week">5 неделя</p>
+            <div class="staps__icon">
+              <img src="img/it5.png" alt="Подвод канализации">
+            </div>
+            <p class="staps__text">Подвод канализации</p>
+          </li>
+          <li class="staps__item">
+            <p class="staps__item-week">6 неделя</p>
+            <div class="staps__icon">
+              <img src="img/it6.png" alt="Разводка электрики">
+            </div>
+            <p class="staps__text">Разводка электрики</p>
+          </li>
+          <li class="staps__item">
+            <p class="staps__item-week">7 неделя</p>
+            <div class="staps__icon">
+              <img src="img/it7.png" alt="Отопление">
+            </div>
+            <p class="staps__text">Отопление</p>
+          </li>
+          <li class="staps__item">
+            <p class="staps__item-week">8 неделя</p>
+            <div class="staps__icon">
+              <img src="img/it8.png" alt="Водоснабжение">
+            </div>
+            <p class="staps__text">Водоснабжение</p>
+          </li>
+          <li class="staps__item">
+            <p class="staps__item-week">9 неделя</p>
+            <div class="staps__icon">
+              <img src="img/it9.png" alt="Внутренняя отделка">
+            </div>
+            <p class="staps__text">Внутренняя отделка</p>
+          </li>
+          <li class="staps__item">
+            <p class="staps__item-week">10 неделя</p>
+            <div class="staps__icon">
+              <img src="img/it10.png" alt="Внешняя отделка">
+            </div>
+            <p class="staps__text">Внешняя отделка</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h4 class="about__title">И это все благодаря <span class="title-bold">cплоченной команде</span> в которой исключительные специалисты по каждому профилю работы</h4>
+      <div class="about__wrap">
+        <div class="about__left">
+          <img src="img/people_002.png" alt="people_002">
+        </div>
+        <div class="about__right">
+          <div class="about__right-feaches">
+            <div class="about__feaches-item">
+              <div class="about__feaches-icon">
+                <span class="about__feaches-count">30 +</span>
+              </div>
+              <p class="about__feaches-text">реализованных проектов</p>
+            </div>
+            <div class="about__feaches-item">
+              <span class="about__feaches-count">от 70 дней</span>
+              <p class="about__feaches-text">срок строительства дома</p>
+            </div>
+            <div class="about__feaches-item">
+              <span class="about__feaches-count">16</span>
+              <p class="about__feaches-text">узкоспециализированных специалистов</p>
+            </div>
+          </div>
+          <div class="about__content">
+            <p class="about__content-title">О нашей компании</p>
+            <p class="about__content-text">Мы занимаемся строительством малоэтажных домов, их отделкой и благоустройством территорий.</p>
+            <p class="about__content-text">С 2009 года мы построили более 30 домов.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="advantages" class="advantages">
+    <div class="container">
+      <h4 class="advantages__left--title">Мы берем на себя полную <span class="title-bold">материальную ответственность</span> и прописываем гарантии</h4>
+      <div class="advantages-wrap">
+        <div class="advantages__left">
+          <div class="advantages__left-item">
+            <div class="advantages__left-item-img">
+              <img src="img/bl1-1.png" alt="advantages__img">
+            </div>
+            <div class="advantages__left-item-border">
+              <p class="advantages__left-item-subtitle">Соблюдаем сроки</p>
+              <p class="advantages__left-item-text">Несем ответственность за соблюдение сроков выполнения работ. В случае срыва - компенсируем убытки за свой счет</p>
+            </div>
+          </div>
+          <div class="advantages__left-item">
+            <div class="advantages__left-item-img">
+              <img src="img/bl1-2.png" alt="advantages__img">
+            </div>
+            <div class="advantages__left-item-border">
+              <p class="advantages__left-item-subtitle">Исправляем за свой счет</p>
+              <p class="advantages__left-item-text">Утерю материалов, любой дефект и несоотвествие характеристикам</p>
+            </div>
+          </div>
+          <div class="advantages__left-item">
+            <div class="advantages__left-item-img">
+              <img src="img/bl1-3.png" alt="advantages__img">
+            </div>
+            <div class="advantages__left-item-border">
+              <p class="advantages__left-item-subtitle">Поэтапная оплата каждого вида работ</p>
+              <p class="advantages__left-item-text">Оплата каждого вида работ разбита на 2 части ( 40% аванс , 60% по завершению )</p>
+            </div>
+          </div>
+          <div class="advantages__left-item">
+            <div class="advantages__left-item-img">
+              <img src="img/bl1-4.png" alt="advantages__img">
+            </div>
+            <div class="advantages__left-item-border">
+              <p class="advantages__left-item-subtitle">Смета без скрытых платежей</p>
+              <p class="advantages__left-item-text">Не поднимаем стоимость. Фиксируем стоимость работ в договоре.</p>
+            </div>
+          </div>
+        </div>
+        <div class="advantages__right">
+          <div class="advantages__right-btn">
+            <a href="img/doc.jpg" class="btn" title="Contract" download><span class="btn-blick"></span>Пример довора</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="without">
+    <div class="container">
+      <h4 class="without__left--title">Работаем с <span class="title-bold">минимальным</span> вашим участием</h4>
+      <div class="without-wrap">
+        <div class="without__left">
+          <div class="without__left-item">
+            <div class="without__left-item-img">
+              <img src="img/bl2-1.png" alt="Соблюдаем сроки">
+            </div>
+            <div class="without__left-item-border">
+              <p class="without__left-item-subtitle">Соблюдаем сроки</p>
+              <p class="without__left-item-text">Несем ответственность за соблюдение сроков выполнения работ. В случае срыва - компенсируем убытки за свой счет</p>
+            </div>
+          </div>
+          <div class="without__left-item">
+            <div class="without__left-item-img">
+              <img src="img/bl2-2.png" alt="Соблюдаем сроки">
+            </div>
+            <div class="without__left-item-border">
+              <p class="without__left-item-subtitle">Исправляем за свой счет</p>
+              <p class="without__left-item-text">Утерю материалов, любой дефект и несоотвествие характеристикам</p>
+            </div>
+          </div>
+          <div class="without__left-item">
+            <div class="without__left-item-img">
+              <img src="img/bl2-3.png" alt="Поэтапная оплата">
+            </div>
+            <div class="without__left-item-border">
+              <p class="without__left-item-subtitle">Поэтапная оплата каждого вида работ</p>
+              <p class="without__left-item-text">Оплата каждого вида работ разбита на 2 части (40% аванс, 60% по завершению)</p>
+            </div>
+          </div>
+          <div class="without__left-item">
+            <div class="without__left-item-img">
+              <img src="img/bl2-4.png" alt="Смета без скрытых платежей">
+            </div>
+            <div class="without__left-item-border">
+              <p class="without__left-item-subtitle">Смета без скрытых платежей</p>
+              <p class="without__left-item-text">Не поднимаем стоимость. Фиксируем стоимость работ в договоре.</p>
+            </div>
+          </div>
+        </div>
+        <div class="without__right">
+          <img src="img/man_004.png" alt="man">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="portfolio__wrap">
+        <div class="portfolio-left">
+          <h4>Вы будете <span class="title-bold">спокойны</span></h4>
+          <p class="portfolio-left__subtitle">Предоставляем полную отчетность о ходе работ</p>
+          <div class="portfolio-left__list">
+            <div class="portfolio-left__item">
+              <div class="portfolio-left__item-img">
+                <img src="img/ico1.png" alt="Фотоотчет">
+              </div>
+              <div class="portfolio-left__item-box">
+                <p class="portfolio-left__box-title">Фотоотчет</p>
+                <p class="portfolio-left__box-text">1 раз в неделю отправляем фотографии о ходе ремонта и строительства с полноценным отчетом о проделанной работе</p>
+              </div>
+            </div>
+            <div class="portfolio-left__item">
+              <div class="portfolio-left__item-img">
+                <img src="img/ico2.png" alt="Связь">
+              </div>
+              <div class="portfolio-left__item-box">
+                <p class="portfolio-left__box-title">Связь</p>
+                <p class="portfolio-left__box-text">1 раз в неделю отправляем фотографии о ходе ремонта и строительства с полноценным отчетом о проделанной работе</p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-left__contact">
+            <p class="portfolio-left__contact-text">По любым возникающим у Вас вопросам о гарантиях смело звоните </p>
+            <a href="tel:+3888888888888" class="main-right__form--subbtn" title="Phone">
+              <svg width="15" height="15">
+                <use href="#icon-call"/>
+              </svg>
+              +3888888888888</a>
+          </div>
+        </div>
+        <div class="portfolio-right">
+          <div class="portfolio-slider">
+            <img src="img/phone.png" alt="phone">
+          </div>
+          <div id="slide" class="slide">
+            <div class="slider-item">
+              <img src="img/01.jpg" alt="slider1">
+            </div>
+            <div class="slider-item">
+              <img src="img/02.jpg" alt="slider2">
+            </div>
+            <div class="slider-item">
+              <img src="img/03.jpg" alt="slider3">
+            </div>
+            <div class="slider-item">
+              <img src="img/04.jpg" alt="slider4">
+            </div>
+            <div class="slider-item">
+              <img src="img/02.jpg" alt="slider5">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="estimate" class="estimate">
+    <div class="container">
+      <div class="estimate-wrap">
+        <div class="estimate-left">
+          <div class="estimate-left__inner">
+            <div class="estimate-left__img">
+              <img src="img/pencil.png" alt="pencil">
+            </div>
+            <p class="estimate-left__title">Звоните</p>
+            <div class="estimate-left__call">
+              <p class="green">Сейчас мы работаем</p>
+              <a href="tel:+3888888888888" title="Phone">
+                <svg width="15" height="15">
+                  <use href="#icon-call"/>
+                </svg>+3888888888888</a>
+            </div>
+            <p>или заполните форму, чтобы получить предварительную смету</p>
+            <label for="estimate__house" class="estimate__house">Какой дом вы хотите построить?</label>
+            <select name="houselist" id="estimate__house" form="form-estimate" class="estimate__select">
+              <option value="Дом">Дом</option>
+              <option value="Квартира">Квартира</option>
+              <option value="Дача">Дача</option>
+              <option value="Магазин">Магазин</option>
+              <option value="Кафе">Кафе</option>
+            </select>
+            <label for="estimate__floor" class="estimate__floor">Количество этажей</label>
+            <select name="floorlist" id="estimate__floor" form="form-estimate">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="1 с мансардой">1 с мансардой</option>
+            </select>
+            <label for="estimate__square" class="estimate__square">Площадь дома</label>
+            <select name="squarelist" id="estimate__square" form="form-estimate">
+              <option value="100 кв. м.">100 кв. м.</option>
+              <option value="200 кв. м.">200 кв. м.</option>
+              <option value="300 кв. м.">300 кв. м.</option>
+            </select>
+            <label for="estimate__material" class="estimate__material">Из какого материала?</label>
+            <select name="materiallist" id="estimate__material" form="form-estimate">
+              <option value="ПГС">ПГС</option>
+              <option value="каркасный дом">каркасный дом</option>
+            </select>
+            <form action="sender.php" method="post" id="form-estimate" class="estimate__form">
+              <p class="estimate__form-subtitle">Ваши контакты</p>
+              <input class="estimate__form-name" placeholder="Как Вас зовут?" type="text" name="name" required>
+              <input class="estimate__form-phone phone" placeholder="+38 (___) ___ __ __" type="text" name="phone" required>
+              <div class="estimate__form-btn">
+                <button class="estimate-btn btn send-form" type="button"><span class="btn-blick"></span>Получить смету</button>
+              </div>
+              <!-- <div class="form__agreement">
+                <input id="agreement1" type="checkbox" checked>
+                <label for="agreement1">Согласен на	обработку персональных данных</label>
+              </div> -->
+            </form>
+          </div>
+        </div>
+        <div id="estimate-righ" class="estimate-right">
+          <h3>Заполните форму и получите <span class="title-bold">предварительную смету</span> по вашему объекту</h3>
+          <div class="estimate-right__inner">
+            <a href="#estimate-righ" class="estimate-content">Смета содержит
+              <ul class="estimate-content__list">
+                <li class="estimate-content__item">Номер и дата сметы</li>
+                <li class="estimate-content__item">Подрядчик</li>
+                <li class="estimate-content__item">Заказчик</li>
+                <li class="estimate-content__item">Наименование и краткая характеристика товара, услуги</li>
+                <li class="estimate-content__item">Стоимость</li>
+              </ul>
+            </a>
+            <a href="img/doc.jpg" download class="estimate-example" title="Order">Просмотреть пример сметы</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="map"></div>
+  <section id="contacts">
+    <div class="container">
+      <div class="contact__wrap">
+        <div class="contact__wrap-left">
+          <p class="contact__left--title">Наши контакты</p>
+          <div class="contact__left--inner">
+            <div class="contact__inner--phones">
+              <div class="contact__phones-icon">
+                <svg width="15" height="15">
+                  <use href="#icon-call"/>
+                </svg>
+              </div>
+              <div class="contact__phones-numbers">
+                <a href="tel:+3888888888888" title="Phone">+3888888888888</a>
+                <a href="tel:+3888888888888" title="Phone">+3888888888888</a>
+              </div>
+            </div>
+            <div class="contact__inner--clock">
+              <div class="contact__clock-icon">
+                <svg width="15" height="15">
+                  <use href="#icon-clock"/>
+                </svg>
+              </div>
+              <p class="contact__clock-text">Пн-Пт с 9:00 до 21:00</p>
+            </div>
+            <div class="contact__inner--address">
+              <div class="contact__address-icon">
+                <svg width="15" height="15">
+                  <use href="#icon-pin"/>
+                </svg>
+              </div>
+              <p class="contact__address-text">г. Киев</p>
+            </div>
+            <div class="contact__inner--email">
+              <div class="contact__email-icon">
+                <svg width="15" height="15">
+                  <use href="#icon-email"/>
+                </svg>
+              </div>
+              <p class="contact__email-text">info@remont</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact__wrap-right">
+          <p class="contact__right--title">Остались вопросы? Смело звоните!</p>
+          <p class="contact__right--text green">Сейчас мы работаем</p>
+          <a href="tel:+3888888888888" class="main-right__form--subbtn contact__right--call" title="Phone">
+            <svg width="15" height="15">
+              <use href="#icon-call"/>
+            </svg>
+            +3888888888888</a>
+          <div class="contact__right--btn">
+            <a href="#modal-cont" class="contact__right--subbtn btn recall--btn" title="Phone"><span class="btn-blick"></span>
+              <svg width="15" height="15" class="header__recall--icon">
+                <use href="#icon-call"/>
+              </svg>Перезвоните мне</a>
+          </div>
+          <p>Или задайте вопрос напрямую в:</p>
+          <p class="contact__right--text green">Среднее время ответа 1 минута</p>
+          <div class="contact__apps--links">
+            <a href="viber://chat?number=+380961776689" title="Viber">
+              <svg width="20" height="20">
+                <use href="#icon-viber"/>
+              </svg>
+              <span>Viber</span>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=+380961776689" title="WhatsApp">
+              <svg width="20" height="20">
+                <use href="#icon-whatsapp"/>
+              </svg>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+          <p class="contact__social--title">Присоединяйтесь к нам в социальных сетях</p>
+          <a href="https://www.facebook.com/idealhouse.bucha/" class="facebook" title="Facebook">
+            <svg width="50" height="50">
+              <use href="#facebook"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer container">
+      <div class="footer-top">
+        <div class="footer__logo">
+          <div class="footer__logo--wrap">
+            <img src="img/Logo_IBC.svg" alt="Logo_IBC">
+          </div>
+          <div class="footer__slogan--wrap">
+            <p>Строительство домов</p>
+            <p>в Киеве и Киевской области</p>
+          </div>
+        </div>
+        <div class="footer__menu">
+          <p class="footer-menu__title">Меню сайта</p>      
+          <ul class="footer-menu__list">
+            <li class="footer-menu__list--item">
+              <a href="#header" class="footer-menu__list--link" title="Главная">Главная</a>
+            </li>
+            <li class="footer-menu__list--item">
+              <a href="#calculation" class="footer-menu__list--link" title="Расчет стоимости">Расчет стоимости</a>
+            </li>
+            <li class="footer-menu__list--item">
+              <a href="#hamer" class="footer-menu__list--link" title="Услуги">Услуги</a>
+            </li>
+            <li class="footer-menu__list--item">
+              <a href="#portfolio" class="footer-menu__list--link" title="Портфолио">Портфолио</a>
+            </li>
+            <li class="footer-menu__list--item">
+              <a href="#about" class="footer-menu__list--link" title="Наша команда">Наша команда</a>
+            </li>
+            <li class="footer-menu__list--item">
+              <a href="#advantages" class="footer-menu__list--link" title="Гарантии">Гарантии</a>
+            </li>
+            <li class="footer-menu__list--item">
+              <a href="#contacts" class="footer-menu__list--link" title="Контакты">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__downloads">
+          <div class="footer__downloads--inner">
+            <div class="footer__downloads--img">
+              <svg width="20" height="20">
+                <use href="#icon-pdf"/>
+              </svg>
+            </div>
+            <a href="img/doc.jpg" title="Contract" download>Скачать договор</a>
+          </div>
+          <div class="footer__downloads--inner">
+            <div class="footer__downloads--img">
+              <svg width="20" height="20">
+                <use href="#icon-pdf"/>
+              </svg>
+            </div>
+            <a href="img/doc.jpg" title="Price" download>Скачать прайс-лист</a>
+          </div>
+          <div class="footer__downloads--inner">
+            <div class="footer__downloads--img">
+              <svg width="20" height="20">
+                <use href="#icon-pdf"/>
+              </svg>
+            </div>
+            <a href="img/doc.jpg" download>Получить смету</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom__rights">
+          <p>Copyright 2020</p>
+          <p>Все права защищены</p>
+        </div>
+        <div class="footer-bottom__policy">
+          <a href="#" title="Policy" target="_blank">Политика конфединциальности</a>
+          <a href="#" title="Map" target="_blank">Карта сайта</a>
+        </div>
+        <div class="footer-bottom__own">
+          <p>Сделано с любовью<br/>в <span>idealhouse</span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="aside" class="aside">
+    <a href="#calculation" class="aside__item" title="calculation">
+      <span class="aside__span">Расчитать стоимость</span>
+      <svg width="20" height="20">
+        <use href="#icon-calculation"/>
+      </svg>
+    </a>
+    <a href="#aside" class="aside__item aside__call recall--btn" title="Phone">
+      <span class="aside__span">Перезвоните мне</span>
+      <svg width="20" height="20" fill="#ffffff">
+        <use href="#icon-call"/>
+      </svg>
+    </a>
+    <a href="https://www.youtube.com/embed/plZymgBEC4c" class="aside__item" title="Youtube" target="_blank">
+      <span class="aside__span">Посмотреть видео</span>
+      <svg width="20" height="20">
+        <use href="#icon-youtube"/>
+      </svg>
+    </a>
+  </div>
+
+  <svg style="display: none;">
+    <symbol id="icon-download" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+      <defs><style>.cls-2{stroke:#010101;}</style></defs>
+      <path class="cls-2" fill="#010101" d="M23.91,8a6.14,6.14,0,0,0-.75.08C21.73,4.57,18.87,1.57,15,1.57a9.41,9.41,0,0,0-8.63,6,4.53,4.53,0,0,0-.74-.08A5.78,5.78,0,0,0,0,13.4c0,3.27,2.75,7.11,5.85,7.11a5.14,5.14,0,0,0,1.71-.32c1,1.16,2.7,1.29,4.24,1.53v-2c-1.46-.32-3-.67-3.62-2.06a3.55,3.55,0,0,1-2.33.89c-2.07,0-4.54-2.24-4.54-4.41S3.56,9.46,5.63,9.46a3.56,3.56,0,0,1,2,.62A7.6,7.6,0,0,1,15,3.55c3.71,0,6.27,3.36,6.88,7.08a3.5,3.5,0,0,1,2-.64c2.07,0,4.22,1.24,4.22,3.41a4.09,4.09,0,0,1-3.84,4.13,3.65,3.65,0,0,1-.87-.12,6.51,6.51,0,0,1-4.67,2.34,4.25,4.25,0,0,1-.94-.12v2a5.87,5.87,0,0,0,.94.09,8.75,8.75,0,0,0,5.45-2.23h.09A6,6,0,0,0,30,13.4C30,10.14,27,8,23.91,8Z"/>
+      <polygon class="cls-2" fill="#010101" points="16.56 14.56 13.63 14.56 13.63 24.13 9.38 24.13 15 29.18 20.63 24.13 16.56 24.13 16.56 14.56"/>
+    </symbol>
+    <symbol id="icon-viber" viewBox="0 0 52.511 52.511" style="enable-background:new 0 0 512 512" xml:space="preserve">
+      <g>
+        <g>
+          <path d="M31.256,0H21.254C10.778,0,2.255,8.521,2.255,18.995v9.01c0,7.8,4.793,14.81,12,17.665v5.841    c0,0.396,0.233,0.754,0.595,0.914c0.13,0.058,0.268,0.086,0.405,0.086c0.243,0,0.484-0.089,0.671-0.259L21.725,47h9.531    c10.476,0,18.999-8.521,18.999-18.995v-9.01C50.255,8.521,41.732,0,31.256,0z M48.255,28.005C48.255,37.376,40.63,45,31.256,45    h-9.917c-0.248,0-0.487,0.092-0.671,0.259l-4.413,3.997v-4.279c0-0.424-0.267-0.802-0.667-0.942    C8.81,41.638,4.255,35.196,4.255,28.005v-9.01C4.255,9.624,11.881,2,21.254,2h10.002c9.374,0,16.999,7.624,16.999,16.995V28.005z" fill="#a500ca" data-original="#000000"/>
+          <path d="M39.471,30.493l-6.146-3.992c-0.672-0.437-1.472-0.585-2.255-0.423c-0.784,0.165-1.458,0.628-1.895,1.303l-0.289,0.444    c-2.66-0.879-5.593-2.002-7.349-7.085l0.727-0.632h0c1.248-1.085,1.379-2.983,0.294-4.233l-4.808-5.531    c-0.362-0.417-0.994-0.46-1.411-0.099l-3.019,2.624c-2.648,2.302-1.411,5.707-1.004,6.826c0.018,0.05,0.04,0.098,0.066,0.145    c0.105,0.188,2.612,4.662,6.661,8.786c4.065,4.141,11.404,7.965,11.629,8.076c0.838,0.544,1.781,0.805,2.714,0.805    c1.638,0,3.244-0.803,4.202-2.275l2.178-3.354C40.066,31.413,39.934,30.794,39.471,30.493z M35.91,34.142    c-0.901,1.388-2.763,1.782-4.233,0.834c-0.073-0.038-7.364-3.835-11.207-7.75c-3.592-3.659-5.977-7.724-6.302-8.291    c-0.792-2.221-0.652-3.586,0.464-4.556l2.265-1.968l4.152,4.776c0.369,0.424,0.326,1.044-0.096,1.411l-1.227,1.066    c-0.299,0.26-0.417,0.671-0.3,1.049c2.092,6.798,6.16,8.133,9.13,9.108l0.433,0.143c0.433,0.146,0.907-0.021,1.155-0.403    l0.709-1.092c0.146-0.226,0.37-0.379,0.63-0.434c0.261-0.056,0.527-0.004,0.753,0.143l5.308,3.447L35.91,34.142z" fill="#a500ca" data-original="#000000"/>
+          <path d="M28.538,16.247c-0.532-0.153-1.085,0.156-1.236,0.688c-0.151,0.531,0.157,1.084,0.688,1.235    c1.49,0.424,2.677,1.613,3.097,3.104c0.124,0.44,0.525,0.729,0.962,0.729c0.09,0,0.181-0.012,0.272-0.037    c0.531-0.15,0.841-0.702,0.691-1.234C32.405,18.578,30.69,16.859,28.538,16.247z" fill="#a500ca" data-original="#000000"/>
+          <path d="M36.148,22.219c0.09,0,0.181-0.012,0.272-0.037c0.532-0.15,0.841-0.703,0.691-1.234c-1.18-4.183-4.509-7.519-8.689-8.709    c-0.531-0.153-1.084,0.158-1.235,0.689c-0.151,0.531,0.157,1.084,0.688,1.235c3.517,1,6.318,3.809,7.311,7.328    C35.311,21.931,35.711,22.219,36.148,22.219z" fill="#a500ca" data-original="#000000"/>
+          <path d="M27.991,7.582c-0.532-0.153-1.085,0.156-1.236,0.689c-0.151,0.531,0.157,1.084,0.688,1.235    c5.959,1.695,10.706,6.453,12.388,12.416c0.124,0.44,0.525,0.729,0.962,0.729c0.09,0,0.181-0.012,0.272-0.037    c0.531-0.15,0.841-0.703,0.691-1.234C39.887,14.753,34.613,9.467,27.991,7.582z" fill="#a500ca" data-original="#000000"/>
+        </g>
+      </g>
+    </symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 418.135 418.135" style="enable-background:new 0 0 418.135 418.135;" xml:space="preserve">
+      <g>
+        <path style="fill:#7AD06D;" d="M198.929,0.242C88.5,5.5,1.356,97.466,1.691,208.02c0.102,33.672,8.231,65.454,22.571,93.536
+      L2.245,408.429c-1.191,5.781,4.023,10.843,9.766,9.483l104.723-24.811c26.905,13.402,57.125,21.143,89.108,21.631
+      c112.869,1.724,206.982-87.897,210.5-200.724C420.113,93.065,320.295-5.538,198.929,0.242z M323.886,322.197
+      c-30.669,30.669-71.446,47.559-114.818,47.559c-25.396,0-49.71-5.698-72.269-16.935l-14.584-7.265l-64.206,15.212l13.515-65.607
+      l-7.185-14.07c-11.711-22.935-17.649-47.736-17.649-73.713c0-43.373,16.89-84.149,47.559-114.819
+      c30.395-30.395,71.837-47.56,114.822-47.56C252.443,45,293.218,61.89,323.887,92.558c30.669,30.669,47.559,71.445,47.56,114.817
+      C371.446,250.361,354.281,291.803,323.886,322.197z"/>
+        <path style="fill:#7AD06D;" d="M309.712,252.351l-40.169-11.534c-5.281-1.516-10.968-0.018-14.816,3.903l-9.823,10.008
+      c-4.142,4.22-10.427,5.576-15.909,3.358c-19.002-7.69-58.974-43.23-69.182-61.007c-2.945-5.128-2.458-11.539,1.158-16.218
+      l8.576-11.095c3.36-4.347,4.069-10.185,1.847-15.21l-16.9-38.223c-4.048-9.155-15.747-11.82-23.39-5.356
+      c-11.211,9.482-24.513,23.891-26.13,39.854c-2.851,28.144,9.219,63.622,54.862,106.222c52.73,49.215,94.956,55.717,122.449,49.057
+      c15.594-3.777,28.056-18.919,35.921-31.317C323.568,266.34,319.334,255.114,309.712,252.351z"/>
+        </g>
+    </symbol>
+    <symbol id="icon-telegram" viewBox="0 0 189.473 189.473" style="enable-background:new 0 0 512 512" xml:space="preserve">
+      <path d="M152.531,179.476c-1.48,0-2.95-0.438-4.211-1.293l-47.641-32.316l-25.552,18.386c-2.004,1.441-4.587,1.804-6.914,0.972   c-2.324-0.834-4.089-2.759-4.719-5.146l-12.83-48.622L4.821,93.928c-2.886-1.104-4.8-3.865-4.821-6.955   c-0.021-3.09,1.855-5.877,4.727-7.02l174.312-69.36c0.791-0.336,1.628-0.53,2.472-0.582c0.302-0.018,0.605-0.018,0.906-0.001   c1.748,0.104,3.465,0.816,4.805,2.13c0.139,0.136,0.271,0.275,0.396,0.42c1.11,1.268,1.72,2.814,1.835,4.389   c0.028,0.396,0.026,0.797-0.009,1.198c-0.024,0.286-0.065,0.571-0.123,0.854L159.898,173.38c-0.473,2.48-2.161,4.556-4.493,5.523   C154.48,179.287,153.503,179.476,152.531,179.476z M104.862,130.579l42.437,28.785L170.193,39.24l-82.687,79.566l17.156,11.638   C104.731,130.487,104.797,130.533,104.862,130.579z M69.535,124.178l5.682,21.53l12.242-8.809l-16.03-10.874   C70.684,125.521,70.046,124.893,69.535,124.178z M28.136,86.782l31.478,12.035c2.255,0.862,3.957,2.758,4.573,5.092l3.992,15.129   c0.183-1.745,0.974-3.387,2.259-4.624L149.227,38.6L28.136,86.782z" fill="#3197ff" data-original="#000000"/>
+    </symbol>
+    <symbol id="icon-dog" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
+      <path xmlns="http://www.w3.org/2000/svg" d="M371.496,485.52C327.36,505.384,289.104,512,236.872,512C114.76,512,7.352,424.456,7.352,280.28  C7.352,130.208,116.224,0,282.488,0c129.472,0,222.16,89.016,222.16,212.6c0,107.4-60.32,175.08-139.768,175.08  c-34.576,0-59.584-17.656-63.264-56.648h-1.472c-22.8,37.52-55.904,56.648-94.896,56.648c-47.816,0-82.392-35.312-82.392-95.64  c0-89.744,66.208-171.4,172.136-171.4c32.368,0,69.144,8.096,87.544,18.392l-22.064,136.096  c-7.352,43.392-2.208,63.264,18.392,63.992c31.632,0.736,71.352-39.728,71.352-124.32c0-95.632-61.792-169.936-175.824-169.936  c-112.544,0-211.128,88.28-211.128,228.784c0,122.848,78.712,192.736,188.328,192.736c37.52,0,77.248-8.088,106.664-23.544  L371.496,485.52z M306.024,181.704c-5.888-1.472-13.248-2.944-22.808-2.944c-48.544,0-86.808,47.816-86.808,104.456  c0,27.952,12.512,45.608,36.784,45.608c27.216,0,55.912-34.576,62.528-77.24L306.024,181.704z" fill="#d22828" data-original="#000000"/>
+    </symbol>
+    <symbol id="icon-call" viewBox="0 0 59.997 59.997" style="enable-background:new 0 0 59.997 59.997;" xml:space="preserve">
+      <g>
+      <path d="M44.071,38.386c-0.895-0.51-1.83-0.779-2.704-0.779c-1.301,0-2.367,0.596-3.012,1.68c-1.021,1.221-2.287,2.646-2.592,2.867
+                c-2.378,1.61-4.237,1.429-6.295-0.629L17.982,30.038c-2.045-2.045-2.233-3.928-0.631-6.292c0.224-0.31,1.649-1.575,2.869-2.595
+                c0.778-0.464,1.312-1.151,1.546-1.996c0.311-1.123,0.081-2.444-0.653-3.731c-0.173-0.296-4.289-7.27-8.085-9.277
+                c-0.709-0.375-1.506-0.573-2.307-0.573c-1.318,0-2.558,0.514-3.489,1.445L4.695,9.556c-7.401,7.402-6.031,16.596,3.962,26.588
+                L23.362,50.85c5.745,5.746,11.224,8.659,16.281,8.659c0.001,0,0.001,0,0.001,0c3.721,0,7.188-1.581,10.306-4.698l2.537-2.537
+                c1.541-1.541,1.892-3.87,0.872-5.796C51.351,42.683,44.378,38.565,44.071,38.386z"></path>
+      </g>
+    </symbol>
+    <symbol id="icon-ok" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 37.13 37.13">
+      <image width="37" height="37" transform="translate(0.13)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlBAMAAAA3sD0wAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURbHDU0dwTLHDUrLDU7DCU7LDUq7GUbHDU7C+V7LEUrHEU7HEU7HDUrq1yNUAAAANdFJOU/4AxLIsoQXpEk5mbHhNNVsOAAABDElEQVQoz2MQBIPOoAKGoshGMFuAAUy5MrArB6szsDoixJwZtEE8bwVmR5iYFIMJxAQRAy6omFhApSAUSBaEQcSSmRphYoJNzIlgsQAzuJCgmEEgSEyKKREhJpjEBRJzqEASEpQocASKGUxEFhOcYCjAIMKMIiQozCLAIMqCKibCKsDQoIgqJqjQwDBhI5rYhgkMAY5wt50CUw4BDOpwBakMYP+IKzAUwZUFQFwgVMAAdUobUJkaxDEMDKwQF7C3BUD9KMoAVSfJUAxVBlIHNe8AAywogOZB7ZWBKQPZC3PfGliIAd2HzR/Y/IstXLCFH7Zwxhof2OINW/xiTQfY0gu2dIU1/WFNp2jpGQDBW1IfA6aokgAAAABJRU5ErkJggg=="/>
+    </symbol>
+    <symbol id="stars" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177 25">
+      <defs><style>.cls-1{fill:none;stroke:#f3e600;stroke-miterlimit:10;stroke-width:2.5px;}</style></defs>
+      <polygon class="cls-1" points="13.01 3.45 16.04 9.58 22.8 10.56 17.91 15.34 19.07 22.07 13.01 18.89 6.96 22.07 8.12 15.34 3.22 10.56 9.99 9.58 13.01 3.45"/><polygon class="cls-1" points="163.99 3.51 167.01 9.64 173.78 10.63 168.88 15.4 170.04 22.14 163.99 18.95 157.94 22.14 159.09 15.4 154.2 10.63 160.96 9.64 163.99 3.51"/><polygon class="cls-1" points="126.24 3.57 129.27 9.7 136.03 10.69 131.14 15.46 132.29 22.2 126.24 19.02 120.19 22.2 121.35 15.46 116.45 10.69 123.22 9.7 126.24 3.57"/><polygon class="cls-1" points="88.5 3.39 91.53 9.52 98.29 10.5 93.39 15.27 94.55 22.01 88.5 18.83 82.45 22.01 83.61 15.27 78.71 10.5 85.47 9.52 88.5 3.39"/><polygon class="cls-1" points="50.76 3.63 53.78 9.77 60.55 10.75 55.65 15.52 56.81 22.26 50.76 19.08 44.71 22.26 45.86 15.52 40.97 10.75 47.73 9.77 50.76 3.63"/>
+    </symbol>
+    <symbol id="icon-clock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+      <g><path d="M504.1,6.2h-4.1C232,6.2,12.2,228,10,495.9c-1.1,131,48.8,256.3,140.6,349.5c91.8,93.4,214.4,148.3,345.3,148.3h4.2C767.9,993.8,987.8,772,990,504C992.3,233.9,774.2,21.9,504.1,6.2z M500.1,962.5h-3.8c-122.6-1.1-237.3-49.7-323.3-137C87.1,738,40.4,618.7,41.4,496.2C43.5,245.4,249.3,37.6,500,37.6h3.8c252.9,15.6,457,213.3,454.8,466.2C956.6,754.6,750.7,962.5,500.1,962.5z M515.8,497.4l2.9-349c0.1-8.7-6.9-16.8-15.5-16.8H503c-8.7,0-15.6,7.9-15.7,16.5l-2.9,354.9c0,4.1,1.6,8.4,4.5,11.4L682,711.2c3.2,3.2,7.2,4.6,11.3,4.6c3.9,0,8-1.4,10.9-4.4c6.3-6.1,6.4-16,0.2-22.1L515.8,497.4z"/></g>
+    </symbol>
+    <symbol id="icon-email" viewBox="0 -67 380 380" xmlns="http://www.w3.org/2000/svg">
+      <path d="m30 0h320c14.402344.0390625 26.761719 10.261719 29.5 24.398438l-189.5 105.601562-189.5-105.601562c2.738281-14.136719 15.097656-24.3593755 29.5-24.398438zm320 246.601562h-320c-16.546875-.050781-29.953125-13.453124-30-30v-169.601562l185.101562 103.199219c1.5.824219 3.183594 1.273437 4.898438 1.300781 1.722656.019531 3.414062-.429688 4.898438-1.300781l185.101562-103.199219v169.601562c-.011719 16.5625-13.4375 29.984376-30 30zm0 0"/>
+    </symbol>
+    <symbol id="icon-pin" style="enable-background:new 0 0 68 68;" viewBox="0 0 68 68" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+      .st0{fill:none;stroke:#543D53;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+      .st1{fill:none;stroke:#543D53;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+      .st2{fill:none;stroke:#543D53;stroke-width:2;stroke-miterlimit:10;}
+      .st3{fill:none;}
+      .st4{fill:none;stroke:#533D53;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+      .st5{fill:#543D53;}
+    </style>
+    <g>
+      <path class="st0" d="M37.4,53.5c13.3,0.4,23.5,2.8,23.5,5.8c0,3.2-12,5.8-26.9,5.8c-14.9,0-26.9-2.6-26.9-5.8   c0-3,10.3-5.4,23.5-5.8"/><g><g><g><path class="st0" d="M51.7,20.6c0,9.7-17.7,38.6-17.7,38.6S16.4,30.4,16.4,20.6S24.3,3,34,3S51.7,10.9,51.7,20.6z"/></g><circle class="st0" cx="34" cy="20.6" r="8"/></g></g><g><g><g><path class="st0" d="M42,20.7c0,4.4-3.6,8-8,8c-4.4,0-8-3.6-8-8c0-4.4,3.6-8,8-8C38.4,12.7,42,16.3,42,20.7z"/></g><path class="st0" d="M42,20.7c0,4.4-3.6,8-8,8c-4.4,0-8-3.6-8-8c0-4.4,3.6-8,8-8C38.4,12.7,42,16.3,42,20.7z"/></g></g></g>
+    </symbol>
+    <symbol id="facebook" viewBox="0 0 512 512">
+      <path d="M426.8 64H85.2C73.5 64 64 73.5 64 85.2v341.6c0 11.7 9.5 21.2 21.2 21.2H256V296h-45.9v-56H256v-41.4c0-49.6 34.4-76.6 78.7-76.6 21.2 0 44 1.6 49.3 2.3v51.8h-35.3c-24.1 0-28.7 11.4-28.7 28.2V240h57.4l-7.5 56H320v152h106.8c11.7 0 21.2-9.5 21.2-21.2V85.2c0-11.7-9.5-21.2-21.2-21.2z"/>
+    </symbol>
+    <symbol id="icon-youtube" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
+      <g>
+        <path d="M490.24,113.92c-13.888-24.704-28.96-29.248-59.648-30.976C399.936,80.864,322.848,80,256.064,80    c-66.912,0-144.032,0.864-174.656,2.912c-30.624,1.76-45.728,6.272-59.744,31.008C7.36,138.592,0,181.088,0,255.904    C0,255.968,0,256,0,256c0,0.064,0,0.096,0,0.096v0.064c0,74.496,7.36,117.312,21.664,141.728    c14.016,24.704,29.088,29.184,59.712,31.264C112.032,430.944,189.152,432,256.064,432c66.784,0,143.872-1.056,174.56-2.816    c30.688-2.08,45.76-6.56,59.648-31.264C504.704,373.504,512,330.688,512,256.192c0,0,0-0.096,0-0.16c0,0,0-0.064,0-0.096    C512,181.088,504.704,138.592,490.24,113.92z M192,352V160l160,96L192,352z" fill="#ffffff" data-original="#000000"/>
+      </g>
+    </symbol>
+    <symbol id="icon-pdf" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
+			<path d="M444.875,109.792L338.208,3.125c-2-2-4.708-3.125-7.542-3.125h-224C83.135,0,64,19.135,64,42.667v426.667     C64,492.865,83.135,512,106.667,512h298.667C428.865,512,448,492.865,448,469.333v-352     C448,114.5,446.875,111.792,444.875,109.792z M341.333,36.417l70.25,70.25h-48.917c-11.76,0-21.333-9.573-21.333-21.333V36.417z      M426.667,469.333c0,11.76-9.573,21.333-21.333,21.333H106.667c-11.76,0-21.333-9.573-21.333-21.333V42.667     c0-11.76,9.573-21.333,21.333-21.333H320v64C320,108.865,339.135,128,362.667,128h64V469.333z" fill="#f2c658" data-original="#000000"/>
+			<path d="M310.385,313.135c-9.875-7.771-19.26-15.76-25.51-22.01c-8.125-8.125-15.365-16-21.656-23.5     c9.813-30.323,14.115-45.958,14.115-54.292c0-35.406-12.792-42.667-32-42.667c-14.594,0-32,7.583-32,43.688     c0,15.917,8.719,35.24,26,57.698c-4.229,12.906-9.198,27.792-14.781,44.573c-2.688,8.052-5.604,15.51-8.688,22.406     c-2.51,1.115-4.948,2.25-7.302,3.427c-8.479,4.24-16.531,8.052-24,11.594C150.5,370.177,128,380.844,128,401.906     c0,15.292,16.615,24.76,32,24.76c19.833,0,49.781-26.49,71.656-71.115c22.708-8.958,50.938-15.594,73.219-19.75     c17.854,13.729,37.573,26.865,47.125,26.865c26.448,0,32-15.292,32-28.115c0-25.219-28.813-25.219-42.667-25.219     C337.031,309.333,325.49,310.604,310.385,313.135z M160,405.333c-6.094,0-10.219-2.875-10.667-3.427     c0-7.563,22.552-18.25,44.365-28.583c1.385-0.656,2.792-1.313,4.219-1.99C181.896,394.563,166.052,405.333,160,405.333z      M234.667,214.354c0-22.354,6.938-22.354,10.667-22.354c7.542,0,10.667,0,10.667,21.333c0,4.5-3,15.75-8.49,33.313     C239.135,233.75,234.667,222.698,234.667,214.354z M242.844,329c0.667-1.854,1.313-3.729,1.938-5.625     c3.958-11.875,7.521-22.542,10.698-32.146c4.427,4.875,9.198,9.865,14.313,14.979c2,2,6.958,6.5,13.563,12.135     C270.208,321.208,256.219,324.76,242.844,329z M362.667,334.552c0,4.792,0,6.781-9.896,6.844     c-2.906-0.625-9.625-4.583-17.917-10.229c3.01-0.333,5.229-0.5,6.479-0.5C357.094,330.667,361.563,332.208,362.667,334.552z" fill="#f2c658" data-original="#000000"/>
+    </symbol>
+    <symbol id="icon-calculation" viewBox="0 0 128 128" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+      <path d="M106.5,0h-85a7.759,7.759,0,0,0-7.75,7.75v112.5A7.759,7.759,0,0,0,21.5,128h85a7.759,7.759,0,0,0,7.75-7.75V7.748A7.759,7.759,0,0,0,106.5,0Zm4.25,120.248a4.254,4.254,0,0,1-4.25,4.25h-85a4.254,4.254,0,0,1-4.25-4.25V7.748A4.254,4.254,0,0,1,21.5,3.5h85a4.254,4.254,0,0,1,4.25,4.25Z" fill="#ffffff" data-original="#000000"/>
+      <path d="M102.5,10h-77a1.749,1.749,0,0,0-1.75,1.75v22A1.749,1.749,0,0,0,25.5,35.5h77a1.749,1.749,0,0,0,1.75-1.75v-22A1.749,1.749,0,0,0,102.5,10Zm-1.75,22H27.25V13.5h73.5Z" fill="#ffffff" data-original="#000000"/>
+      <path d="M73.5,97.523h-19a1.75,1.75,0,0,0-1.75,1.75v16.973A1.749,1.749,0,0,0,54.5,118h19a1.749,1.749,0,0,0,1.75-1.75V99.273A1.75,1.75,0,0,0,73.5,97.523ZM71.749,114.5h-15.5V101.023h15.5Z" fill="#ffffff" data-original="#000000"/>
+      <path d="M44.529,97.523H25.5a1.75,1.75,0,0,0-1.75,1.75v16.973A1.749,1.749,0,0,0,25.5,118H44.529a1.749,1.749,0,0,0,1.75-1.75V99.273A1.75,1.75,0,0,0,44.529,97.523ZM42.779,114.5H27.25V101.023H42.779Z" fill="#ffffff" data-original="#000000"/>
+      <path d="M73.5,69.766h-19a1.749,1.749,0,0,0-1.75,1.75V88.488a1.749,1.749,0,0,0,1.75,1.75h19a1.749,1.749,0,0,0,1.75-1.75V71.516A1.749,1.749,0,0,0,73.5,69.766Zm-1.75,16.972h-15.5V73.266h15.5Z" fill="#ffffff" data-original="#000000"/>
+      <path d="M44.529,69.766H25.5a1.749,1.749,0,0,0-1.75,1.75V88.488a1.749,1.749,0,0,0,1.75,1.75H44.529a1.749,1.749,0,0,0,1.75-1.75V71.516A1.749,1.749,0,0,0,44.529,69.766Zm-1.75,16.972H27.25V73.266H42.779Z" fill="#ffffff" data-original="#000000"/>
+      <path d="M102.5,69.766H83.471a1.749,1.749,0,0,0-1.75,1.75v44.73a1.749,1.749,0,0,0,1.75,1.75H102.5a1.749,1.749,0,0,0,1.75-1.75V71.516A1.749,1.749,0,0,0,102.5,69.766Zm-1.75,44.73H85.221V73.266H100.75Z" fill="#ffffff" data-original="#000000"/>
+      <path d="M73.5,42.008h-19a1.749,1.749,0,0,0-1.75,1.75V60.73a1.749,1.749,0,0,0,1.75,1.75h19a1.749,1.749,0,0,0,1.75-1.75V43.758A1.749,1.749,0,0,0,73.5,42.008ZM71.749,58.98h-15.5V45.508h15.5Z" fill="#ffffff" data-original="#000000"/>
+      <path d="M44.529,42.008H25.5a1.749,1.749,0,0,0-1.75,1.75V60.73a1.749,1.749,0,0,0,1.75,1.75H44.529a1.749,1.749,0,0,0,1.75-1.75V43.758A1.749,1.749,0,0,0,44.529,42.008ZM42.779,58.98H27.25V45.508H42.779Z" fill="#ffffff" data-original="#000000"/>
+      <path d="M102.5,42.008H83.471a1.749,1.749,0,0,0-1.75,1.75V60.73a1.749,1.749,0,0,0,1.75,1.75H102.5a1.749,1.749,0,0,0,1.75-1.75V43.758A1.749,1.749,0,0,0,102.5,42.008ZM100.75,58.98H85.221V45.508H100.75Z" fill="#ffffff" data-original="#000000"/>
+    </symbol>
+  </svg>
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/jquery.maskedinput.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="js/slider.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9hvKMjHxhOQ-Po6rcv8Spy_724r16pqA&callback=initMap"></script>
+  <script src="js/map.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
